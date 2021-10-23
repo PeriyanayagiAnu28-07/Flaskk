@@ -1,0 +1,23 @@
+<html>
+   <head>
+        <title>LIST OF USERS</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+   </head>
+   <body>
+    <table>
+		   <tr>
+		   
+		   <th>LIST OF USERS</th>
+		   
+		   </tr>
+		    
+		    {% for da in data %}
+			   <tr>
+			   
+			     
+				 <td>{{da.username}}</td>
+				 
+			{% endfor %}
+		</table>
+   </body>
+</html>
